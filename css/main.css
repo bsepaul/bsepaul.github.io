@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=DM Mono');
+
+:root {
+    --darkBlue: #273442;
+    --lightBlue: #334458;
+    --white: #ececec;
+}
+
+body {
+    margin: 0;
+    background: var(--darkBlue);
+    font-family: 'DM Mono';
+    font-weight: 100;
+}
+
+.container {
+    width: 80%;
+    margin: 0;
+}
+
+.light-half {
+    width: 50%;
+    height: 100%;
+    float: right;
+    position: fixed;
+    background-color:var(--darkBlue);
+}
+
+.topNav {
+    padding: 10px 16px;
+    background-image: linear-gradient( rgb(31, 40, 51, 1), rgb(31, 40, 51, 0));
+    color: var(--white);
+}
+
+.topNav a {
+    float: left;
+    color: var(--white);
+    text-align: center;
+    padding: 18px 40px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.topNav a:hover {
+    /* background-color: var(--darkBlue); */
+    color: var(--lightBlue);
+}
+
+.topNav a:active {
+    color: var(--white);
+    text-decoration: underline var(--white);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* .btn {
+    float: right;
+    position:absolute;
+    top: 10px;
+    left: 800px;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.btn:focus { outline-style: none; } */
+/* 
+* {
+    color: var(--fontColor);
+    font-family: 'DM Mono' ;
+}
+
+.btn {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}*/
