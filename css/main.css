@@ -1,127 +1,152 @@
-@import url('https://fonts.googleapis.com/css?family=DM Mono');
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono&family=Mukta:wght@200&display=swap");
 
 :root {
-    --darkBlue: #273442;
-    --lightBlue: #9db4ce;
-    --white: #dddddd;
+  --darkBlue: #273442;
+  --lightBlue: #9db4ce;
+  --white: #dddddd;
 }
 
 body {
-    margin: 0;
-    background: var(--darkBlue);
-    font-family: 'DM Mono';
-    color: var(--white);
+  margin: 0;
+  background: var(--darkBlue);
+  font-family: "DM Mono", monospace;
+  color: var(--white);
 }
 
 .logo a {
-    font-size: 45px;
+  font-size: 45px;
 }
 
 .container {
-    margin-left: 10%;
-    margin-right: 10%;
+  max-width: 1200px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .topNav {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    background-image: linear-gradient( rgb(31, 40, 51, 1), rgb(31, 40, 51, 0));
-    color: var(--white);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-image: linear-gradient(rgb(31, 40, 51, 1), rgb(31, 40, 51, 0));
+  color: var(--white);
 }
 
 .topNav a {
-    float: left;
-    color: var(--white);
-    text-align: center;
-    font-size: 14px;
-    text-decoration: none;
+  float: left;
+  color: var(--white);
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .topNav a:hover {
-    color: var(--lightBlue);
+  color: var(--lightBlue);
 }
 
 .topNav a:active {
-    color: var(--white);
-    text-decoration: underline var(--white);
+  color: var(--white);
+  text-decoration: underline var(--white);
 }
 
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .sticky + .content {
-    padding-top: 102px;
+  padding-top: 102px;
 }
 
-.flex-opposite{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+.flex-opposite {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 li {
-    float: left;
+  float: left;
 }
 
 li a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
+  display: block;
+  text-align: center;
+  text-decoration: none;
 }
 
 .navLinks a {
-    padding-right: 60px;
+  padding-right: 60px;
 }
 
 .iconLinks a {
-    padding-left: 25px;
+  padding-left: 25px;
 }
 
 .icon {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 .intro {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .word-intro {
-    padding-top: 100px;
-    color: var(--white);
-    padding-right: 40px;
+  padding-top: 100px;
+  color: var(--white);
+  padding-right: 40px;
 }
 
 .name-intro {
-    font-size: 72px;
-    font-weight: bolder;
+  font-size: 72px;
+  font-weight: bolder;
 }
 
 .details {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    margin-top: 10px;
+  font-family: "Mukta", sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.details a {
+  text-decoration: none;
+  color: var(--white);
+}
+.details a:hover {
+  color: var(--lightBlue);
+}
+
+.project-links {
+  font-size: 18px;
+  padding-right: 5px;
+  padding-top: 10px;
 }
 
 img.portrait {
-    width: 300px;
-    height: 410px;
-    margin-top: 100px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px #161e25;
+  width: 300px;
+  height: 410px;
+  margin-top: 100px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #161e25;
 }
 
 .title {
-    font-size: 30px;
+  font-size: 30px;
+}
+
+.about-me {
+  padding-top: 45px;
+}
+
+.page-title {
+  padding-top: 100px;
+  font-size: 40px;
 }
