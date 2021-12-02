@@ -2,32 +2,29 @@
 
 :root {
     --darkBlue: #273442;
-    --lightBlue: #334458;
-    --white: #ececec;
+    --lightBlue: #9db4ce;
+    --white: #dddddd;
 }
 
 body {
     margin: 0;
     background: var(--darkBlue);
     font-family: 'DM Mono';
-    font-weight: 100;
+    color: var(--white);
+}
+
+.logo a {
+    font-size: 45px;
 }
 
 .container {
-    width: 80%;
-    margin: 0;
-}
-
-.light-half {
-    width: 50%;
-    height: 100%;
-    float: right;
-    position: fixed;
-    background-color:var(--darkBlue);
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .topNav {
-    padding: 10px 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     background-image: linear-gradient( rgb(31, 40, 51, 1), rgb(31, 40, 51, 0));
     color: var(--white);
 }
@@ -36,13 +33,11 @@ body {
     float: left;
     color: var(--white);
     text-align: center;
-    padding: 18px 40px;
     font-size: 14px;
     text-decoration: none;
 }
 
 .topNav a:hover {
-    /* background-color: var(--darkBlue); */
     color: var(--lightBlue);
 }
 
@@ -61,8 +56,10 @@ body {
     padding-top: 102px;
 }
 
-.logo {
-    font-size: 20px;
+.flex-opposite{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 ul {
@@ -79,32 +76,52 @@ li {
 li a {
     display: block;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
-
-/* .btn {
-    float: right;
-    position:absolute;
-    top: 10px;
-    left: 800px;
-    height: 48px;
-    width: 48px;
-    border-radius: 50%;
-    border: none;
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
+.navLinks a {
+    padding-right: 60px;
 }
 
-.btn:focus { outline-style: none; } */
-/* 
-* {
-    color: var(--fontColor);
-    font-family: 'DM Mono' ;
+.iconLinks a {
+    padding-left: 25px;
 }
 
-.btn {
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
-}*/
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.word-intro {
+    padding-top: 100px;
+    color: var(--white);
+    padding-right: 40px;
+}
+
+.name-intro {
+    font-size: 72px;
+    font-weight: bolder;
+}
+
+.details {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+img.portrait {
+    width: 300px;
+    height: 410px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #161e25;
+}
+
+.title {
+    font-size: 30px;
+}
