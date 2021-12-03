@@ -197,9 +197,7 @@ img.portrait {
 }
 
 .footer {
-  margin-top: 50px;
-  height: 120px;
-  background-color: var(--mediumBlue);
-  bottom: 0;
+  height: 100px;
+  margin-bottom: 0;
   width: 100%;
 }
