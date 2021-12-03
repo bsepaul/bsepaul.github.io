@@ -2,6 +2,7 @@
 
 :root {
   --darkBlue: #273442;
+  --mediumBlue: #49617a;
   --lightBlue: #9db4ce;
   --white: #dddddd;
 }
@@ -13,14 +14,25 @@ body {
   color: var(--white);
 }
 
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+a:hover {
+  color: var(--lightBlue);
+}
+
 .logo a {
   font-size: 45px;
 }
 
 .container {
   max-width: 1200px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .topNav {
@@ -60,6 +72,12 @@ body {
 .flex-opposite {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
@@ -113,7 +131,8 @@ li a {
   font-family: "Mukta", sans-serif;
   font-weight: lighter;
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .details a {
@@ -140,6 +159,11 @@ img.portrait {
 
 .title {
   font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 20px;
 }
 
 .about-me {
@@ -148,5 +172,32 @@ img.portrait {
 
 .page-title {
   padding-top: 100px;
+  padding-bottom: 40px;
   font-size: 40px;
+}
+
+.project-title {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.project-description {
+  max-width: 450px;
+  padding-right: 30px;
+}
+
+.project-image {
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.overlay {
+  margin-top: -700px;
+}
+
+.footer {
+  margin-top: 50px;
+  height: 120px;
+  background-color: var(--mediumBlue);
 }
