@@ -2,7 +2,7 @@
 
 :root {
   --darkBlue: #273442;
-  --mediumBlue: #49617a;
+  --mediumBlue: #324458;
   --lightBlue: #9db4ce;
   --white: #dddddd;
 }
@@ -114,12 +114,13 @@ li a {
 .intro {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .word-intro {
   padding-top: 100px;
   color: var(--white);
-  padding-right: 40px;
+  /* padding-right: 40px; */
 }
 
 .name-intro {
@@ -130,8 +131,7 @@ li a {
 .details {
   font-family: "Mukta", sans-serif;
   font-weight: lighter;
-  font-size: 16px;
-  margin-top: 6px;
+  font-size: 18px;
   margin-bottom: 6px;
 }
 
@@ -150,20 +150,19 @@ li a {
 }
 
 img.portrait {
-  width: 300px;
-  height: 410px;
-  margin-top: 100px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px #161e25;
+  margin-top: 50px;
+  width: 480px;
+  height: 480px;
 }
 
 .title {
   font-size: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 .subtitle {
-  font-size: 20px;
+  font-family: "Mukta", sans-serif;
+  font-size: 24px;
 }
 
 .about-me {
@@ -200,4 +199,20 @@ img.portrait {
   height: 100px;
   margin-bottom: 0;
   width: 100%;
+}
+
+.experience {
+  background-color: var(--mediumBlue);
+  border-radius: 30px;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+.project {
+  padding: 10px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
