@@ -44,6 +44,22 @@ li a {
   text-decoration: none;
 }
 
+.bubble {
+  margin-bottom: 2%;
+  margin-left: -2%;
+  margin-right: -2%;
+  padding: 2%;
+  border-radius: 20px;
+  transition: 0.6s;
+}
+
+.bubble:hover {
+  background-color: var(--mediumBlue);
+  margin-left: -3%;
+  margin-right: -3%;
+  padding: 3%;
+}
+
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -68,19 +84,11 @@ li a {
 .details a {
   text-decoration: none;
   color: var(--lightBlue);
+  transition: 0.5s;
 }
 
 .details a:hover {
   color: var(--white);
-}
-
-.detail-bubble {
-  background-color: var(--mediumBlue);
-  border-radius: 30px;
-  margin-bottom: 20px;
-  padding: 30px;
-  margin-left: -30px;
-  margin-right: -30px;
 }
 
 .flex-opposite {
@@ -141,10 +149,6 @@ li a {
   height: 350px;
 }
 
-.project {
-  width: 100%;
-}
-
 .project-links {
   font-size: 18px;
   padding-right: 5px;
@@ -156,9 +160,14 @@ li a {
 }
 
 .project-display {
+  padding: 0;
+}
+
+.project-grid {
   display: grid;
-  grid-template-columns: 32% 32% 32%;
-  gap: 2%;
+  grid-template-columns: 40% 55%;
+  column-gap: 5%;
+  row-gap: 2%;
 }
 
 .project-image {
@@ -169,36 +178,6 @@ li a {
 
 .project-title {
   font-size: 22px;
-}
-
-
-.section {
-  padding-top: 45px;
-}
-
-
-.topNav {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  background-image: linear-gradient(rgb(31, 40, 51, 1), rgb(31, 40, 51, 0));
-  color: var(--white);
-}
-
-.topNav a {
-  float: left;
-  color: var(--white);
-  text-align: center;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.topNav a:hover {
-  color: var(--lightBlue);
-}
-
-.topNav a:active {
-  color: var(--white);
-  text-decoration: underline var(--white);
 }
 
 .row {
@@ -212,6 +191,10 @@ li a {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.section {
+  padding-top: 45px;
 }
 
 .sticky {
@@ -232,6 +215,31 @@ li a {
 .title {
   font-size: 30px;
   padding-bottom: 10px;
+}
+
+.topNav {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-image: linear-gradient(rgb(31, 40, 51, 1), rgb(31, 40, 51, 0));
+  color: var(--white);
+}
+
+.topNav a {
+  float: left;
+  color: var(--white);
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.topNav a:hover {
+  color: var(--lightBlue);
+}
+
+.topNav a:active {
+  color: var(--white);
+  text-decoration: underline var(--white);
 }
 
 .user-icon {
