@@ -96,7 +96,7 @@ li a {
 }
 
 /* LARGE SCREEN */
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 751px) {
   .experience-grid {
     display: grid;
     grid-template-columns: 34% 63%;
@@ -138,10 +138,22 @@ li a {
     font-size: 65px;
     font-weight: bolder;
   }
+  .navLinks {
+    width: 45%;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .iconLinks {
+    width: 18%;
+    max-width: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /* SMALL SCREEN */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 750px) {
   .experience-grid {
     display: grid;
     grid-template-columns: 100%;
@@ -149,7 +161,7 @@ li a {
     font-family: "Mukta", sans-serif;
     font-weight: bold;
     font-size: 16px;
-    padding-bottom: 160px;
+    padding-bottom: 250px;
   }
   .icon {
     width: 18px;
@@ -185,6 +197,18 @@ li a {
   .name-intro {
     font-size: 50px;
     font-weight: bolder;
+  }
+  .navLinks {
+    width: 60%;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .iconLinks {
+    width: 30%;
+    max-width: 100px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -225,6 +249,7 @@ li a {
   font-size: 16px;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .icon-big {
@@ -244,13 +269,6 @@ li a {
   padding-top: 4px;
 }
 
-.iconLinks {
-  width: 18%;
-  max-width: 100px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .intro {
   padding-top: 100px;
   display: flex;
@@ -267,13 +285,6 @@ li a {
 
 .logo a {
   font-size: 45px;
-}
-
-.navLinks {
-  width: 45%;
-  max-width: 300px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .portrait {
