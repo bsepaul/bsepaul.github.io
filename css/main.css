@@ -75,6 +75,15 @@ li a {
   margin-right: auto;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 60px;
+}
+
+.content-large {
+  border-radius: 8px;
+  min-width: 400px;
+  width: 75%;
+  box-shadow: -3px 3px 5px 4px var(--shadow);
+  margin-top: 20px;
 }
 
 .date {
@@ -150,6 +159,13 @@ li a {
     display: flex;
     justify-content: space-between;
   }
+  .video {
+    border-radius: 8px;
+    width: 852px;
+    height: 480px;
+    box-shadow: -3px 3px 5px 4px var(--shadow);
+    margin-top: 20px;
+  }
 }
 
 /* SMALL SCREEN */
@@ -209,6 +225,13 @@ li a {
     max-width: 100px;
     display: flex;
     justify-content: space-between;
+  }
+  .video {
+    border-radius: 8px;
+    width: 426px;
+    height: 240px;
+    box-shadow: -3px 3px 5px 4px var(--shadow);
+    margin-top: 20px;
   }
 }
 
